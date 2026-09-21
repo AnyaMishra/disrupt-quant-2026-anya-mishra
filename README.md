@@ -109,17 +109,19 @@ parameters, so there is nothing to serialise. No pickle or joblib files anywhere
 ```text
 AI tools used: Claude (Anthropic), via the Claude chat interface.
 
-How they were used: Materially, across most of the workflow. Specifically:
-  - Exploratory data analysis and the cross-sectional rank-IC scan of all 18
-    candidate features (research/01, 02).
-  - Designing and running the cost tests that rejected the 1-day reversal
-    signal (research/03).
-  - Portfolio construction choices — sector neutralisation, inverse-volatility
-    weighting, signal smoothing, ex-ante volatility targeting (research/04, 06).
-  - The robustness battery: Newey-West standard errors, the within-day
-    permutation test, and the block bootstrap (research/05).
-  - The post-validation diagnostics (research/07).
-  - Writing strategy.py, this README, and drafting research_note.pdf.
+AI tools used: Claude (Anthropic), via the Claude chat interface.
+
+How they were used: Extensively. I directed the workflow and made the
+judgement calls — scope, which avenue to pursue, freezing before validation
+and running it once, and declining to add a sector risk cap after seeing the
+Energy loss. Claude generated the exploratory analysis, the feature scan, the
+portfolio construction, the statistical tests, strategy.py, and the first
+draft of the research note. I reviewed all of it and reproduced the results
+via the scripts in research. Any strategical descisions were made and planned
+by me, only utilizing Claude as my GitHub and VScode were running into many
+unforseen issues which prevented it from working.
+
+I can explain and defend every component of this submission.
 
 Not AI-assisted: the decision to freeze before validation and to run it only
 once; the decision not to add a sector risk cap after seeing the Energy loss;
